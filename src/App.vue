@@ -27,13 +27,9 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn router to="/" text >
-        <span class="mr-2">Home</span>
-      </v-btn>
+      <v-btn router to="/" text >Home</v-btn>
 
-      <v-btn text router to= "/about" >
-        <span class="mr-2">About</span>
-      </v-btn>  
+      <v-btn text router to= "/about" >About</v-btn>  
     </v-app-bar>
 
     <v-content>
