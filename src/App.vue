@@ -1,51 +1,30 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn router to="/" text >Home</v-btn>
-
-      <v-btn text router to= "/about" >About</v-btn>  
+    <v-app-bar app prominent flat color="white">
+      <div class="">
+        <v-img alt="sendbrief logo" class="shrink ml-10 mt-13" contain src="./assets/logo.svg" transition="scale-transition" width="150" />
+      </div> 
     </v-app-bar>
-
-    <v-content>
+     
+    <!-- <v-content> 
       <router-view></router-view>
+    </v-content> -->
+
+    <v-content class="mx-3">
+      <Intro/>
     </v-content>
-    
   </v-app>
 </template>
 
 <script>
+import Intro from "@/components/Intro.vue"
 
 export default {
   name: 'App',
 
   components: {
-    
+    Intro,
+
   },
 
   data: () => ({
@@ -53,3 +32,10 @@ export default {
   }),
 };
 </script>
+ <style lang="scss">
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ #app {
+  font-family: 'Montserrat', sans-serif;
+}
+ </style>
