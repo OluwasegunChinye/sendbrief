@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar app prominent flat color="white">
+    <v-app-bar app flat color="white" style="opacity:0.9">
       <div class="">
-        <v-img alt="sendbrief logo" class="shrink ml-10 mt-13" contain src="./assets/logo.svg" transition="scale-transition" width="150" />
+        <v-img alt="sendbrief logo" class="shrink ml-9 mt-4" contain src="./assets/logo.svg" transition="scale-transition" width="130" />
       </div> 
     </v-app-bar>
      
